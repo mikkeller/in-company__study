@@ -151,7 +151,7 @@ console.log(Anko.prototype.constructor === Anko);
 console.log(foo.constructor === Anko);
 
 // Anko() 생성자 함수를 생성한 객체는 Function() 생성자 함수이다.
-console.log(Anko.constructor === Function);
+console.log(Anko.constructor === Function); 
 ```
 
 <br>

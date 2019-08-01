@@ -185,4 +185,5 @@ var kmw = new Alba();
 prototype은 함수가 가지고 있던 값들만 가지고 있지만
 __proto__는 생성될 때 조상이었던 Object를 참조한다.
 <br>
+<br>
 참조 블로그 : <a href="https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67" target="_blank">바로가기</a>
