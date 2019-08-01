@@ -7,109 +7,20 @@
     <title>Memo</title>
     <link rel="stylesheet" href="./src/reset.css">
     <link rel="stylesheet" href="./src/memo.css">
-    <script src="./src/memo.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="./src/jquery-1.8.3.min.js"></script>
 </head>
 <body>
+    <header class="memo-header">
+        <h1 class="memo-header__title">Mikkeller</h1>
+        <button class="memo-add-button">메모 추가</button>
+    </header>
     <article class="memo">
         <h1 class="hidden">메모 컨텐츠</h1>
         <ul class="memo__list">
-            <li class="memo__item">
-                <div class="memo__header">
-                    <div class="memo__header-info">
-                        <p class="memo__date">2019-07-18</p>
-                        <p class="memo__title" contenteditable="true">제목없음</p>
-                    </div>
-                    <div class="memo__action-box">
-                        <a href="" class="action-button action-button--modify" title="수정하기">수정</a>
-                        <a href="" class="action-button action-button--favorite" title="즐겨찾기">즐겨찾기</a>
-                        <a href="" class="action-button action-button--delete" title="삭제하기">삭제</a>
-                    </div>
-                </div>
-                <div class="memo__contents-wrap">
-                    <div class="memo__contents" contenteditable="true">내용을 입력하세요.</div>
-                </div>
-            </li>
-            <li class="memo__item">
-                <div class="memo__header">
-                    <div class="memo__header-info">
-                        <p class="memo__date">2019-07-18</p>
-                        <p class="memo__title" contenteditable="true">제목없음</p>
-                    </div>
-                    <div class="memo__action-box">
-                        <a href="" class="action-button action-button--modify" title="수정하기">수정</a>
-                        <a href="" class="action-button action-button--favorite" title="즐겨찾기">즐겨찾기</a>
-                        <a href="" class="action-button action-button--delete" title="삭제하기">삭제</a>
-                    </div>
-                </div>
-                <div class="memo__contents-wrap">
-                    <div class="memo__contents" contenteditable="true">내용을 입력하세요.</div>
-                </div>
-            </li>
-            <li class="memo__item">
-                <div class="memo__header">
-                    <div class="memo__header-info">
-                        <p class="memo__date">2019-07-18</p>
-                        <p class="memo__title" contenteditable="true">제목없음</p>
-                    </div>
-                    <div class="memo__action-box">
-                        <a href="" class="action-button action-button--modify" title="수정하기">수정</a>
-                        <a href="" class="action-button action-button--favorite" title="즐겨찾기">즐겨찾기</a>
-                        <a href="" class="action-button action-button--delete" title="삭제하기">삭제</a>
-                    </div>
-                </div>
-                <div class="memo__contents-wrap">
-                    <div class="memo__contents" contenteditable="true">내용을 입력하세요.</div>
-                </div>
-            </li>
-            <li class="memo__item">
-                <div class="memo__header">
-                    <div class="memo__header-info">
-                        <p class="memo__date">2019-07-18</p>
-                        <p class="memo__title" contenteditable="true">제목없음</p>
-                    </div>
-                    <div class="memo__action-box">
-                        <a href="" class="action-button action-button--modify" title="수정하기">수정</a>
-                        <a href="" class="action-button action-button--favorite" title="즐겨찾기">즐겨찾기</a>
-                        <a href="" class="action-button action-button--delete" title="삭제하기">삭제</a>
-                    </div>
-                </div>
-                <div class="memo__contents-wrap">
-                    <div class="memo__contents" contenteditable="true">내용을 입력하세요.</div>
-                </div>
-            </li>
-            <li class="memo__item">
-                <div class="memo__header">
-                    <div class="memo__header-info">
-                        <p class="memo__date">2019-07-18</p>
-                        <p class="memo__title" contenteditable="true">제목없음</p>
-                    </div>
-                    <div class="memo__action-box">
-                        <a href="" class="action-button action-button--modify" title="수정하기">수정</a>
-                        <a href="" class="action-button action-button--favorite" title="즐겨찾기">즐겨찾기</a>
-                        <a href="" class="action-button action-button--delete" title="삭제하기">삭제</a>
-                    </div>
-                </div>
-                <div class="memo__contents-wrap">
-                    <div class="memo__contents" contenteditable="true">내용을 입력하세요.</div>
-                </div>
-            </li>
-            <li class="memo__item">
-                <div class="memo__header">
-                    <div class="memo__header-info">
-                        <p class="memo__date">2019-07-18</p>
-                        <p class="memo__title" contenteditable="true">제목없음</p>
-                    </div>
-                    <div class="memo__action-box">
-                        <a href="" class="action-button action-button--modify" title="수정하기">수정</a>
-                        <a href="" class="action-button action-button--favorite" title="즐겨찾기">즐겨찾기</a>
-                        <a href="" class="action-button action-button--delete" title="삭제하기">삭제</a>
-                    </div>
-                </div>
-                <div class="memo__contents-wrap">
-                    <div class="memo__contents" contenteditable="true">내용을 입력하세요.</div>
-                </div>
-            </li>
+            <li class="memo__nodata-item">작성된 메모가 없습니다.</li>
         </ul>
     </article>
+    <script src="./src/memo.js"></script>
 </body>
 </html>
