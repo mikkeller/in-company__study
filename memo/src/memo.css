@@ -26,7 +26,7 @@
 .memo__title {width:100%;border:0;font-size:14px;outline:none;background-color:transparent}
 .memo__title::-webkit-input-placeholder {color:#472b06}
 
-.action-button {overflow:hidden;float:left;width:16px;height:16px;margin-left:6px;border:0;cursor:pointer;color:transparent;background:url('/img/memo.png');background-size:450px 282px}
+.action-button {overflow:hidden;float:left;width:16px;height:16px;margin-left:6px;border:0;cursor:pointer;color:transparent;background:url('../img/memo.png');background-size:450px 282px}
 .action-button:first-child {margin-left:0}
 .action-button--save,
 .action-button--modify {background-position:-21px -231px}
