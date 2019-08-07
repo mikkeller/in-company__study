@@ -1,3 +1,8 @@
+(function(){
+    
+
+
+
 var Storage = function() {};
 
 Storage.prototype.data = [];
@@ -49,14 +54,13 @@ var item = `
             </li>
 `;
 
-$(document).on("click", ".memo-add-button", function(e) {
+$(document).on("click", ".memo-add-button", function() {
     //메모가 없을 경우 메모 생성해주고 nodata 날려주기
     if($('.memo__list').children('.memo__item').length == 0) {
         $('.memo__nodata-item').hide();
     }
     
     $(item).appendTo($('.memo__list'));
-    e.preventDefault();
 });
 
 $(document).on("click", ".action-button", function(e) {
@@ -68,14 +72,14 @@ $(document).on("click", ".action-button", function(e) {
 
     if($(this).hasClass('action-button--save')) { //저장 버튼
         //Key 값이 없을 경우 최초 생성
-        if(parent.attr('data-id') == null) {
+        
+        if(!parent.attr('data-id')) {
             parent.attr('data-id', unique());
         }
 
         //제목 입력값 없을 경우
-        if(title == '') {
+        if(title === '') {
             parent.find('.memo__title').val('-');
-            title = '-';
         }
 
         //메모 data 넣어주기
@@ -131,17 +135,16 @@ $(document).on("click", ".action-button", function(e) {
                 }
             });
 
-            var after = Storage.prototype.data.filter(function(n) {
+            Storage.prototype.data = Storage.prototype.data.filter(function(n) {
                 return n !== 'empty';
             });
-
-            Storage.prototype.data = after;
         }
         
         console.log('삭제완료', Storage.prototype.data);
     }
-    e.preventDefault();
+
 });
+
 
 $(document).on('focusin', '.memo__contents', function(e) {
     if($(this).text() === '내용을 입력하세요.') {
@@ -152,7 +155,6 @@ $(document).on('focusin', '.memo__contents', function(e) {
 $(document).on('focusout', '.memo__contents', function(e) {
     if($(this).text() === '') {
         $(this).text('내용을 입력하세요.');
-    } else {
-        return false;
     }
 });
+}());
