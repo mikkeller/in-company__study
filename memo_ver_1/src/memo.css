@@ -7,7 +7,7 @@
   font-style:normal; 
 }
 
-.hidden {overflow:hidden;border:0;width:1px;height:1px;margin:-1px;clip:rect(1px, 1px, 1px, 1px);clip-path:inset(50%)}
+.hidden {overflow:hidden;border:0;width:1px;height:0;margin:-1px;clip:rect(1px, 1px, 1px, 1px);clip-path:inset(50%)}
 
 .memo-header {position:relative;padding:10px 0;background-color:#fad749}
 .memo-header__title {font-family:'YunTaemin';font-size:40px;text-align:center;line-height:40px;color:#472b06}

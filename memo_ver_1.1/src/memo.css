@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+@font-face { 
+  font-family:'YunTaemin';
+  src:url('../font/Yun.woff') format('woff');
+  font-weight:normal;
+  font-style:normal; 
+}
+
+html {height:100%}
+body {height:100%;background:url('../img/bg.png')}
+
+.hidden {overflow:hidden;border:0;width:1px;height:1px;margin:-1px;clip:rect(1px, 1px, 1px, 1px);clip-path:inset(50%)}
+
+.memo {height:calc(100% - 54px)}
+.memo-header {overflow:hidden;padding:5px 10px;font-family:'YunTaemin';}
+.memo-header__title {float:left;line-height:42px}
+.memo-title-button {font-size:30px;color:#dbb13d}
+.memo-header-button {float:right;font-size:30px;font-weight:bold;line-height:42px}
+.memo-header-button--save {}
+
+.memo__contents-wrap {height:100%}
+.memo__contents {height:100%;padding:10px;box-sizing:border-box;font-size:16px;caret-color:#dbb13d;color:#333;background-color:transparent}
+.memo__contents * {background-color:transparent !important}
